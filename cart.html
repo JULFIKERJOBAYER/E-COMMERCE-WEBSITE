@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an ecommerce website">
+
+    <!--font awesome cdn starts here-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font awesome cdn ends here-->
+    
+    <!--google fonts embeding starts here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=New+Amsterdam&family=Sevillana&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <!--google fonts embeding ends here-->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="desktop.css" media= "screen and (max-width: 992px)">
+    <title>JULFIKER'S EXPRESS</title>
+</head>
+<body>
+
+<!--navbar starts here-->
+
+    <div class="menuicon">
+        <i class="fas fa-bars fa-1x" id="menu-icon"></i>
+    </div>
+
+    <nav>
+        <div id="menu" class="hidden">
+            <ul class="nav-upper flex-space-around">
+                <li class="nav__list">
+                    <a href="index.html" class="nav__link">HOME</a>
+                </li>
+                <li class="nav__list">
+                    <a href="register.html" class="nav__link">REGISTER</a>
+                </li>
+                <li class="nav__list">
+                    <a href="login.html" class="nav__link">LOGIN</a>
+                </li>
+                <li class="nav__list">
+                    <a href="contact.html" class="nav__link">CONTACT</a>
+                </li>
+                <li class="nav__list">
+                    <a href="cart.html" class="nav__link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        CART
+                    </a>
+                </li>
+                <li class="nav__list">
+                    <a href="profile.html" class="nav__link">
+                        <img class="profile-icon" src="images/profile.jpg" alt="profile-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list nav__brand">
+            <h1 class="title">Unique Technology</h1>
+            </li>
+        </ul>
+    </div>
+
+<!--navbar ends here-->
+
+<!--main start here-->
+<main>
+    <div class="cart flex-center">
+        <div class="cart__items">
+
+            <div class="cart__items-heading card">
+                    <h2>Shopping Cart (2 items)</h2>
+                <div class="cart__items-actions">
+                    <label for="select">
+                        <input type="checkbox" name="select" id="select">Select all items
+                    </label>
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    <button class="btn">Shop More</button>
+                </div>
+            </div>
+            <div class="cart__item card flex-space-around">
+                    <input type="checkbox" name="" id="">
+                    <img src="images/bluetoothearphone1.jpg" alt="p1" class="cart__item-img">
+
+                <div class="cart__item-description">
+                    <h3 class="product__name">Blutooth Earphone</h3>
+                    <h4 class="product__price">Price: BDT 1599TK</h4>
+                    <p class="cart__item-shipping">Free Shipping</p>
+                </div>
+                <div class="cart__item-actions">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    <div>
+                    <button class="btn"><i class="fas fa-add"></i></button>
+                    <span>3</span>
+                    <button class="btn"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__item card flex-space-around">
+                    <input type="checkbox" name="" id="">
+                    <img src="images/watch.jpg" alt="p2" class="cart__item-img">
+
+                <div class="cart__item-description">
+                    <h3 class="product__name">T25G5 Watch for men</h3>
+                    <h4 class="product__price">Price: BDT 5999TK</h4>
+                    <p class="cart__item-shipping">Shipping Cost: BDT 70Tk</p>
+                </div>
+                <div class="cart__item-actions">
+                    <button class="btn"><i class="fas fa-trash-alt"></i></button>
+                    <div>
+                        <button class="btn"><i class="fas fa-add"></i></button>
+                        <span>3</span>
+                        <button class="btn"><i class="fas fa-minus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__payment ">
+            <div class="cart__payment-summary card">
+                    <h2>Payment Summary</h2>
+                <div>
+                    <p>Subtotal</p>
+                    <p>BDT 1000TK</p>
+                </div>
+                <div>
+                    <p>Shipping Cost</p>
+                    <p>BDT 70TK</p>
+                </div>
+                <div>
+                    <p>Total Cost</p>
+                    <p>BDT 10,070TK</p>
+                </div>
+                <button class="btn cart__payment-btn">
+                    Pay Now
+                </button>
+            </div>
+            <div class="cart__payment-methods card">
+                    <h2>Payment Methods</h2>
+                <div>
+                    <i class="fa-brands fa-cc-visa fa-3x"></i>
+                    <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                    <i class="fa-brands fa-cc-amex fa-3x"></i>
+                    <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                    <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+            
+<!--main end here-->         
+                
+<!--footer starts here-->
+
+<footer class="flex-space-around">
+    <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter: </label>
+        <input type="email" 
+                id="subscribe" 
+                name="subscribe" 
+                class="footer-input" 
+                placeholder="Your Email Address"/>
+                <button class="btn btn-subscribe">Subscribe</button>
+    </div>
+    <div class="flex-space-around">
+        <p>&copy; Copyright 2024 Unique Technology. All rights reserved</p>
+    </div>
+</footer>
+                
+<!--footer ends here-->
+                    
+<script src="index.js"></script>
+</body>
+</html>

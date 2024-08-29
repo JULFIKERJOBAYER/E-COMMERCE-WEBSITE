@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is an ecommerce website">
+
+    <!--font awesome cdn starts here-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font awesome cdn ends here-->
+    
+    <!--google fonts embeding starts here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=New+Amsterdam&family=Sevillana&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <!--google fonts embeding ends here-->
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="desktop.css" media= "screen and (max-width: 992px)">
+    <title>JULFIKER'S EXPRESS</title>
+</head>
+<body>
+
+<!--navbar starts here-->
+
+    <div class="menuicon">
+        <i class="fas fa-bars fa-1x" id="menu-icon"></i>
+    </div>
+
+    <nav>
+        <div id="menu" class="hidden">
+            <ul class="nav-upper flex-space-around">
+                <li class="nav__list">
+                    <a href="index.html" class="nav__link">HOME</a>
+                </li>
+                <li class="nav__list">
+                    <a href="register.html" class="nav__link">REGISTER</a>
+                </li>
+                <li class="nav__list">
+                    <a href="login.html" class="nav__link">LOGIN</a>
+                </li>
+                <li class="nav__list">
+                    <a href="contact.html" class="nav__link">CONTACT</a>
+                </li>
+                <li class="nav__list">
+                    <a href="cart.html" class="nav__link">
+                        <span><i class="fa-solid fa-cart-shopping"></i></span>
+                        CART
+                    </a>
+                </li>
+                <li class="nav__list">
+                    <a href="profile.html" class="nav__link">
+                        <img class="profile-icon" src="images/profile.jpg" alt="profile-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list nav__brand">
+            <h1 class="title">Unique Technology</h1>
+            </li>
+        </ul>
+    </div>
+
+<!--navbar ends here-->
+
+
+<!--main start here-->
+                              
+<main>
+    <section class="contact-section">
+            <h2 class="section-title text-center">Contact Us</h2>
+        <div class="contact-container flex-center">
+            <form action="" class="form card">
+                <div class="form-control flex-center">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required autocomplete="name">
+                </div>
+                <div class="form-control flex-center">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required autocomplete="email">
+                </div>
+                <div class="form-control flex-center">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div class="form-control flex-center form-btn-field">
+                    <button type="submit" class="btn contact-btn">Submit</button>
+                </div>
+            </form>
+            <div class="contact-address flex-space-around">
+                <address>
+                    <h4>Address</h4>
+                    <p>East Bakkhali, Sheikherhat-4311</p>
+                    <p>Sitakunda, Chattogram</p>
+                    <p>Call: 01838406407</p>
+                </address>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14731.710184394338!2d91.64929568767545!3d22.61918064565436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375333908e7dade1%3A0x7251facce4da8c0c!2sSitakund%20Bazar!5e0!3m2!1sen!2sbd!4v1724952277969!5m2!1sen!2sbd"
+                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--main end here-->
+
+<!--footer starts here-->
+
+<footer class="flex-space-around">
+    <div class="flex-space-around">
+        <label for="subscribe">Subscribe to Newsletter: </label>
+        <input type="email" 
+                id="subscribe" 
+                name="subscribe" 
+                class="footer-input" 
+                placeholder="Your Email Address"/>
+                <button class="btn btn-subscribe">Subscribe</button>
+    </div>
+    <div class="flex-space-around">
+        <p>&copy; Copyright 2024 Unique Technology. All rights reserved</p>
+    </div>
+</footer>
+            
+<!--footer ends here-->
+                    
+<script src="index.js"></script>
+</body>
+</html>

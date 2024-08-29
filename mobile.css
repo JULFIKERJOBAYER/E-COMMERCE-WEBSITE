@@ -1,0 +1,140 @@
+/*reset & common code for mobile start here*/
+
+main{
+    padding: 10px;
+    min-height: 100vh;
+}
+.flex-space-around{
+    flex-direction: column;
+    gap: 1rem;
+}
+.flex-center{
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+ }
+
+ /*reset & common code for mobile ends here*/
+
+
+/*menu icon design for mobile start here*/
+
+.menuicon{
+    background-color: var(--secondary-color);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+#menu-icon{
+    display: block;
+    color: white;
+    text-align: right;
+    margin: 5px 5px;
+    cursor: pointer;   
+}
+
+/*menu icon design for mobile ends here*/
+
+
+/*navbar design for mobile start here*/
+
+nav{
+    position: sticky;
+    top: 30px;
+}
+.hidden{
+    display: none;
+}
+
+/*navbar design for mobile ends here*/
+
+
+/*header design for mobile starts here*/
+
+header{
+    padding: 2rem;
+    height: 100vh;
+}
+.banner__title{
+    font-size: 3rem;
+}
+
+/*header design for mobile ends here*/
+
+/*main of home pages design for mobile starts here*/
+
+.sidebar{
+    flex-direction: row;
+    font-size: px;
+    text-align: left;
+    align-self: flex-start;
+}
+.products{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.actions__search input{
+    width: 25rem;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+}
+.actions__search button{
+    margin-left: -20px;
+    border-radius: 0 20px 20px 0;
+    width: 50px;
+    background-color: bisque;
+}
+.actions__sort select{
+    background-color: bisque;
+}
+
+/*main of home pages design for mobile ends here*/
+
+/*cart pages design for mobile start here*/
+
+.cart__items,
+.cart__payment{
+    width: 90%;
+}
+
+/*cart pages design for mobile start here*/
+
+
+/*register & login pages & form related design for mobile start here*/
+
+.register .card{
+    width: 90%;
+}
+.form, .form-control{
+    width: 100%;
+}
+.form-control input,textarea{
+    width: 90%;
+}
+
+/*register & login pages & form related design for mobile ends here*/
+
+
+/*contacct page design for mobile start here*/
+
+.contact-container{
+    margin-top: 0rem;
+}
+.contact-address{
+    width: 100%;
+}
+
+/*contacct page design for mobile start here*/
+
+
+/*footer design for mobile starts here*/
+
+.btn-subscribe{
+    border-radius: 5px 5px 5px 5px;
+}
+.footer-input{
+    border-radius: 5px 5px 5px 5px;
+}
+
+/*footer design for mobile ends here*/
